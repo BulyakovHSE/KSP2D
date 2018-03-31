@@ -2,5 +2,11 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:KSP2D.UWP.Styles">
-    
+    <SolidColorBrush x:Key="KerbinPath" Color="#8ACAC2"/>
+    <SolidColorBrush x:Key="DunaPath" Color="#A23E28"/>
+    <SolidColorBrush x:Key="DjulPath" Color="#548412"/>
+    <SolidColorBrush x:Key="MohoPath" Color="#EEB688"/>
+    <SolidColorBrush x:Key="ElooPath" Color="#686A6A"/>
+    <SolidColorBrush x:Key="EvePath" Color="#6C20E4"/>
+    <SolidColorBrush x:Key="DressPath" Color="#5A4432"/>
 </ResourceDictionary>

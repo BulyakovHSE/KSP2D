@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="KSP2D.UWP.ExtendedSplash"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KSP2D.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#0C0905">
+        <Image x:Name="SunImage" Source="Images/Sun.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="KerbinImage" Source="Images/Kerbin.png" Margin="{Binding Width, ElementName=KerbinEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="DjulImage" Source="Images/Djul.png" Margin="{Binding Width, ElementName=DjulEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="DressImage" Source="Images/Dress.png" Margin="{Binding Width, ElementName=DressEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="DunaImage" Source="Images/Duna.png" Margin="{Binding Width, ElementName=DunaEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="ElooImage" Source="Images/Eloo.png" Margin="{Binding Width, ElementName=ElooEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="EveImage" Source="Images/Eve.png" Margin="{Binding Width, ElementName=EveEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
+        <Image x:Name="MohoImage" Source="Images/Moho.png" Margin="{Binding Width, ElementName=MohoEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0" RenderTransformOrigin="0.5 0.5"/>
+        <Ellipse x:Name="KerbinEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource KerbinPath}" Width="175" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="DjulEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource DjulPath}" Width="1050" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="DunaEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource DunaPath}" Width="275" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="DressEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource DressPath}" Width="650" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="MohoEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource MohoPath}" Width="75" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="ElooEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource ElooPath}" Width="1350" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <Ellipse x:Name="EveEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource EvePath}" Width="125" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
+        <TextBlock x:Name="LoadingStatusTxt" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="Brown" Margin="0 0 0 20"/>
+    </Grid>
+</Page>

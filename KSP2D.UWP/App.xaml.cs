@@ -50,13 +50,13 @@ namespace KSP2D.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                if (e.PreviousExecutionState != ApplicationExecutionState.Running)
                 {
-                    //TODO: Load state from previously suspended application
+                    Window.Current.Content = new ExtendedSplash(e.SplashScreen);
                 }
 
                 // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
+                //Window.Current.Content = rootFrame;
             }
 
             if (e.PrelaunchActivated == false)
