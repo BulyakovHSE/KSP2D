@@ -161,7 +161,12 @@
       <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\OneDrive\Documents\Projects\UWP\UWPMVVMLib\UWPMVVMLib.csproj">
+      <Project>{D5581A5D-6EE7-4BF8-96F3-224998C9FF12}</Project>
+      <Name>UWPMVVMLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

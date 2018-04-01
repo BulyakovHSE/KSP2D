@@ -5,17 +5,50 @@
     xmlns:local="using:KSP2D.UWP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DataContext="{d:DesignInstance local:ExtendedSplashViewModel}"
     mc:Ignorable="d">
 
     <Grid Background="#0C0905">
-        <Image x:Name="SunImage" Source="Images/Sun.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="KerbinImage" Source="Images/Kerbin.png" Margin="{Binding Width, ElementName=KerbinEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="DjulImage" Source="Images/Djul.png" Margin="{Binding Width, ElementName=DjulEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="DressImage" Source="Images/Dress.png" Margin="{Binding Width, ElementName=DressEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="DunaImage" Source="Images/Duna.png" Margin="{Binding Width, ElementName=DunaEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="ElooImage" Source="Images/Eloo.png" Margin="{Binding Width, ElementName=ElooEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="EveImage" Source="Images/Eve.png" Margin="{Binding Width, ElementName=EveEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0"/>
-        <Image x:Name="MohoImage" Source="Images/Moho.png" Margin="{Binding Width, ElementName=MohoEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0" RenderTransformOrigin="0.5 0.5"/>
+        <Image x:Name="SunImage" Source="Images/Sun.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Kerbal"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="KerbinImage" Source="Images/Kerbin.png" Margin="{Binding Width, ElementName=KerbinEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Kerbin"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="DjulImage" Source="Images/Djul.png" Margin="{Binding Width, ElementName=DjulEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Djul"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="DressImage" Source="Images/Dress.png" Margin="{Binding Width, ElementName=DressEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Dress"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="DunaImage" Source="Images/Duna.png" Margin="{Binding Width, ElementName=DunaEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Duna"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="ElooImage" Source="Images/Eloo.png" Margin="{Binding Width, ElementName=ElooEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Eloo"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="EveImage" Source="Images/Eve.png" Margin="{Binding Width, ElementName=EveEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0">
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Eve"/>
+            </ToolTipService.ToolTip>
+        </Image>
+        <Image x:Name="MohoImage" Source="Images/Moho.png" Margin="{Binding Width, ElementName=MohoEllipse, Converter={StaticResource DoubleToLeftMarginConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="21" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}" Canvas.ZIndex="0" >
+            <ToolTipService.ToolTip>
+                <TextBlock Text="Moho"/>
+            </ToolTipService.ToolTip>
+        </Image>
         <Ellipse x:Name="KerbinEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource KerbinPath}" Width="175" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
         <Ellipse x:Name="DjulEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource DjulPath}" Width="1050" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
         <Ellipse x:Name="DunaEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource DunaPath}" Width="275" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
@@ -24,5 +57,80 @@
         <Ellipse x:Name="ElooEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource ElooPath}" Width="1350" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
         <Ellipse x:Name="EveEllipse" Canvas.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="{StaticResource EvePath}" Width="125" Height="{Binding Path=Width, RelativeSource={RelativeSource Self}}"/>
         <TextBlock x:Name="LoadingStatusTxt" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="Brown" Margin="0 0 0 20"/>
+        <StackPanel Width="200" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Name="Moho" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Moho" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Eve" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Eve" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Kerbin" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Kerbin" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Duna" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Duna" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Dress" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Dress" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Djul" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Djul" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+            <StackPanel Name="Eloo" BorderBrush="Beige"  BorderThickness="1">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Azure" Opacity="0.3"/>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleSwitch Toggled="ToggleSwitch_OnToggled" Header="Eloo" Foreground="Azure"/>
+                    <ComboBox Margin="-70 0 0 0" ItemsSource="{Binding Priorities}" SelectionChanged="Selector_OnSelectionChanged"/>
+                </StackPanel>
+                <Slider Minimum="0" Maximum="5000" ValueChanged="RangeBase_OnValueChanged"/>
+            </StackPanel>
+        </StackPanel>
+        
+        
     </Grid>
 </Page>
+
